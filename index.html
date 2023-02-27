@@ -561,12 +561,19 @@
         </div>
         <form class="e-mail-input">
           <p class="subscribe-news-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-         <input  name="user_email" class="subscribe-news" type="email" placeholder="E-mail"required> 
-         <button type="submit" class="subscribe-news-bth">Підписатися
-          <svg class="icon-send" width="24px" height="24px"> 
-            <use href="./images/icons.svg/sprite1.svg#icon-icon-send"></use>
-          </svg>
-         </button>
+          <input
+            name="user_email"
+            class="subscribe-news"
+            type="email"
+            placeholder="E-mail"
+            required
+          />
+          <button type="submit" class="subscribe-news-bth">
+            <span class="bthn-icon">Підписатися</span>
+            <svg class="icon-send" width="24px" height="24px">
+              <use href="./images/icons.svg/sprite1.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
@@ -590,46 +597,52 @@
                 pattern="^[а-яА-Я]+\s[а-яА-Я]+$"
                 title="Ім'я та Прізвище"
               />
-              <svg class=" form-icon" width= "18px" height="18px">
-                <use href="./images/icons.svg/sprite1.svg#icon-person-black-18dp-1"> </use>
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/icons.svg/sprite1.svg#icon-person-black-18dp-1"
+                ></use>
               </svg>
             </span>
           </label>
           <label class="contact-form-field">
             <span class="field-item">Телефон</span>
-             <span class="contact-form-input-wrapper">
-            <input
-              name="user_phone"
-              class="contact-form-input"
-              type="tel"
-              required
-              pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/"
-              title="096-xx-xx-xx"
-            />
-            <svg class=" form-icon" width= "18px" height="18px">
-                <use href="./images/icons.svg/sprite1.svg#icon-phone-black-18dp-1"> </use>
+            <span class="contact-form-input-wrapper">
+              <input
+                name="user_phone"
+                class="contact-form-input"
+                type="tel"
+                required
+                pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/"
+                title="096-xx-xx-xx"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/icons.svg/sprite1.svg#icon-phone-black-18dp-1"
+                ></use>
               </svg>
-             </span>
+            </span>
           </label>
           <label class="contact-form-field">
             <span class="field-item"> Пошта</span>
             <span class="contact-form-input-wrapper">
-            <input
-              name="user_email"
-              required
-              class="contact-form-input"
-              type="email"
-              title=".....@.xxx"
-            />
-            <svg class=" form-icon" width= "18px" height="18px">
-                <use href="./images/icons.svg/sprite1.svg#icon-email-black-18dp-1"> </use>
+              <input
+                name="user_email"
+                required
+                class="contact-form-input"
+                type="email"
+                title=".....@.xxx"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use
+                  href="./images/icons.svg/sprite1.svg#icon-email-black-18dp-1"
+                ></use>
               </svg>
             </span>
           </label>
           <label class="contact-form-field-message">
             <span class="field-item">Коментар</span>
             <textarea
-              name=""
+              name="user_textarea"
               class="contact-form-message"
               placeholder="Введіть текст"
             ></textarea>
@@ -642,8 +655,10 @@
               id="policy-checkbox"
               required
             />
-            <label for="policy-checkbox" class="contact-form-checkbox-lable"
-              > <span class="policy-text">Погоджуюся з розсилкою та приймаю </span> 
+            <label for="policy-checkbox" class="contact-form-checkbox-lable">
+              <span class="policy-text"
+                >Погоджуюся з розсилкою та приймаю
+              </span>
               <a href=""><span class="offer-link">Умови договору</span></a>
             </label>
           </div>

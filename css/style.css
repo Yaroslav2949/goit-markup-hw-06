@@ -272,25 +272,39 @@ ul {
   border-radius: 4px;
   padding: 40px;
   width: 528px;
-  height: 581px;
+
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--duration) var(--timing-function);
 }
+
+/* кнопка (хрестик) закриття модального вікна */
+
 .close-icon {
   position: absolute;
   top: 8px;
   right: 8px;
   padding: 0;
-  width: 30;
-  height: 30;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-icon:hover .close-icon-item {
+  fill: var(--accent-color);
+}
+
+.close-icon:focus .close-icon-item {
+  fill: var(--accent-color);
+}
+.close-icon-item {
+  transition: var(--duration) var(--timing-function);
 }
 
 /* альтернатива постановки форм в полі замовлення */
@@ -345,12 +359,13 @@ flex-direction: column;
 }
 
 .field-item {
+  display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-
+  margin-bottom: 4px;
   letter-spacing: 0.01em;
 
   color: #757575;
@@ -383,13 +398,6 @@ flex-direction: column;
   color: #212121;
 }
 
-.close-icon-item:hover {
-  fill: var(--accent-color);
-}
-
-/* .close-icon-item:focus {
-  fill: var(--accent-color);
-} */
 .policy-text {
   font-family: "Roboto";
   font-style: normal;
@@ -412,8 +420,8 @@ flex-direction: column;
 
   letter-spacing: 0.03em;
 
-  color: #757575;
-  transition: var(--duration) var(--timing-function);
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .offer-link:hover {
@@ -432,8 +440,9 @@ flex-direction: column;
 /* стилізація чекбоксу */
 
 .contact-form-checkbox-lable {
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
+
   font-size: 14px;
 }
 
@@ -610,7 +619,7 @@ flex-direction: column;
   justify-content: center;
   pointer-events: none;
   align-items: center;
-  z-index: index 1;
+  z-index: 1;
 }
 .discribe-element-icon {
   position: relative;
@@ -970,32 +979,37 @@ flex-direction: column;
 }
 .subscribe-news-bth {
   position: relative;
+
+  padding: 10px 62px 10px 28px;
   width: 200px;
   height: 50px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 0px;
+
   border-radius: 4px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  border: none;
 
   letter-spacing: 0.06em;
 
   color: #ffffff;
 }
+/* .bthn-icon{
+margin: 10px 62px 10px 28px;
 
+} */
 .e-mail-input {
-  margin-left: 100px;
+  margin-left: 110px;
 }
 .icon-send {
   position: absolute;
 
   top: 50%;
-  right: 13px;
+  right: 28px;
+
   transform: translateY(-50%);
 }
 /* Portfolio */
